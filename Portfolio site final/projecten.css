@@ -1,0 +1,167 @@
+.container {  
+    display: grid;
+    grid-template-columns: 0.3fr 1.2fr 1.2fr;
+    grid-template-rows: 0.8fr 1.3fr 1.3fr 0.2fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-areas:
+      "nav top-text top-text"
+      "nav project-1 project-1"
+      "nav project-1 project-1"
+      "footer footer footer";
+  }
+  .projecten {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    width: 89vw;
+    height: 80vh;
+    overflow-x: scroll;
+    grid-template-areas:
+      "project-1 project-1 project-2 project-2"
+      "project-3 project-3 project-4 project-4";
+  }
+  
+  .project-1 { grid-area: project-1; }
+  
+  .project-2 { grid-area: project-2; }
+  
+  .project-3 { grid-area: project-3; }
+  
+  .project-4 { grid-area: project-4; }
+  
+  body  {
+    margin: 0;
+  }
+
+  .nav {
+    grid-area: nav;
+    height: 89vh;
+    border-right: 3px solid rgb(169, 0, 0);
+}
+  .side-nav a  {
+    font-family: 'gilgan', sans-serif;
+    font-size: 1px;
+  }
+  
+  .top-text {
+    grid-area: top-text;
+
+}
+  .top-text h1  {
+    font-family: 'gilgan', sans-serif;
+    text-align: left;
+    font-size: 40pt;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    color: white;
+  }
+  .top-text p {
+    font-family: 'gilgan', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 2.5%;
+    color: white;
+  }
+  .footer-content {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "footer-left footer-right";
+  }
+  
+  .footer-left { grid-area: footer-left; }
+  
+  .footer-right { grid-area: footer-right; }
+
+  .footer-left h3 {
+  display: flex;
+  margin-left: 1%;
+  color: white;
+  font-family: 'gilgan', sans-serif;
+  text-decoration: none;
+}
+  .footer-right {
+  display: flex;
+  align-items: right;
+  text-align: right;
+  justify-content: right;
+}
+  .footer-right p {
+  display: flex;
+  margin-left: 1%;
+  color: white;
+  font-family: 'gilgan', sans-serif;
+  text-decoration: none;
+  margin-right: 1%;
+}
+
+  .footer { grid-area: footer; 
+      height: 5vh;
+}
+.project-1  {
+  background-color: rgb(54, 54, 54);
+  border-radius: 20px;
+  margin: 2.5%;
+  min-width: 40em;
+}
+.project-1 h2 {
+  color: white;
+  font-family: 'gilgan', sans-serif;
+  text-decoration: none;
+  font-size: 25pt;
+  margin-left: 2.5%;
+}
+.project-1-p  {
+  color: white;
+  font-family: 'gilgan', sans-serif;
+  text-decoration: none;
+  font-size: 15pt;
+  margin-left: 2.5%;
+}
+.opdrachtgever {
+  color: rgb(169, 0, 0);
+  font-family: 'gilgan', sans-serif;
+  text-decoration: none;
+  font-size: 20pt;
+  margin-left: 2.5%;
+  font-weight: bold;
+}
+#technowire {
+  width: 35em;
+  height: auto;
+}
+
+
+
+
+.project-2  {
+  background-color: rgb(54, 54, 54);
+  border-radius: 20px;
+  margin: 2.5%;
+  min-width: 40em;
+}
+
+
+
+.project-3  {
+  background-color: rgb(54, 54, 54);
+  border-radius: 20px;
+  margin: 2.5%;
+  min-width: 40em;
+}
+
+
+
+.project-4  {
+  background-color: rgb(54, 54, 54);
+  border-radius: 20px;
+  margin: 2.5%;
+  min-width: 40em;
+}
